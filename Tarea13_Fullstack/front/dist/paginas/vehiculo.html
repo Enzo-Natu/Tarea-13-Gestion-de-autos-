@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Información del vehículo</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="encabezado">
+        <a class="marca-sitio" href="../../index.html">AUTOMOTORA</a>
+        <a class="boton boton-secundario" href="../../index.html">Volver al listado</a>
+    </header>
+    <main class="contenedor formulario-contenedor">
+        <section class="intro">
+            <p class="etiqueta">DETALLE DEL VEHÍCULO</p>
+            <h1>Información y modificación</h1>
+            <p>Podés consultar y actualizar los datos del auto.</p>
+        </section>
+        <p id="mensaje" class="mensaje"></p>
+        <form id="form-vehiculo">
+            <label for="id_marca">Marca *</label>
+            <select id="id_marca" required></select>
+            <label for="modelo">Modelo *</label>
+            <input id="modelo" type="text" maxlength="50" required>
+            <label for="anio">Año</label>
+            <input id="anio" type="number" min="1886" max="2100">
+            <label for="precio">Precio</label>
+            <input id="precio" type="number" min="0" step="0.01">
+            <label for="estado">Estado *</label>
+            <select id="estado" required>
+                <option value="Nuevo">Nuevo</option>
+                <option value="Usado">Usado</option>
+            </select>
+            <button class="boton" type="submit">Guardar cambios</button>
+        </form>
+    </main>
+    <script src="../js/vehiculo.js"></script>
+</body>
+</html>

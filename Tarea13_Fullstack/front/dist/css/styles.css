@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f5f8;
+    color: #202938;
+    font-family: Arial, sans-serif;
+}
+
+.encabezado {
+    min-height: 76px;
+    padding: 16px 7%;
+    background: #172235;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.marca-sitio {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 86%;
+    max-width: 1150px;
+    margin: 48px auto;
+}
+
+.intro {
+    margin-bottom: 28px;
+}
+
+.etiqueta {
+    color: #5576b9;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 8px 0;
+    font-size: 32px;
+}
+
+.intro p:last-child {
+    color: #687386;
+}
+
+.boton {
+    display: inline-block;
+    border: 0;
+    border-radius: 7px;
+    padding: 12px 18px;
+    background: #315da8;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: #244985;
+}
+
+.boton-secundario {
+    background: #ffffff;
+    color: #172235;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(20, 35, 60, 0.07);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+th, td {
+    padding: 17px 18px;
+    border-bottom: 1px solid #e8ebf0;
+    text-align: left;
+}
+
+th {
+    background: #f8f9fb;
+    color: #536075;
+    font-size: 13px;
+}
+
+td {
+    font-size: 14px;
+}
+
+.estado {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 20px;
+    background: #e9f1ff;
+    color: #315da8;
+    font-size: 12px;
+}
+
+.enlace {
+    color: #315da8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.formulario-contenedor {
+    max-width: 680px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 28px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(20, 35, 60, 0.07);
+}
+
+label {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6dce5;
+    border-radius: 6px;
+    background: #ffffff;
+    font-size: 15px;
+}
+
+form button {
+    margin-top: 18px;
+}
+
+.mensaje {
+    min-height: 20px;
+    font-size: 14px;
+}
+
+.correcto {
+    color: #16834a;
+}
+
+.error {
+    color: #c0392b;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .encabezado {
+        padding: 14px 4%;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
